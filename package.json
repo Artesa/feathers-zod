@@ -39,6 +39,7 @@
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
   },
   "dependencies": {
+    "@feathersjs/adapter-commons": "5.0.0-pre.37",
     "@feathersjs/errors": "5.0.0-pre.37",
     "@feathersjs/feathers": "5.0.0-pre.37",
     "zod": "^3.20.6"
