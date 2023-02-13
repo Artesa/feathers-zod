@@ -1,0 +1,64 @@
+{
+  "name": "feathers-zod",
+  "version": "0.0.0",
+  "description": "",
+  "author": "fratzinger",
+  "homepage": "https://github.com/fratzinger/feathers-zod",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fratzinger/feathers-zod"
+  },
+  "keywords": [],
+  "license": "MIT",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "main": "./dist/index.cjs",
+  "types": "./dist/index.d.ts",
+  "engines": {
+    "node": ">= 16.0.0"
+  },
+  "files": [
+    "CHANGELOG.md",
+    "LICENSE",
+    "README.md",
+    "src/**",
+    "dist/**"
+  ],
+  "scripts": {
+    "build": "unbuild",
+    "version": "npm run build",
+    "release": "np",
+    "vitest": "vitest",
+    "test": "vitest run",
+    "coverage": "vitest run --coverage",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
+  },
+  "dependencies": {
+    "@feathersjs/errors": "5.0.0-pre.37",
+    "@feathersjs/feathers": "5.0.0-pre.37",
+    "zod": "^3.20.6"
+  },
+  "devDependencies": {
+    "@types/node": "^18.13.0",
+    "@typescript-eslint/eslint-plugin": "^5.51.0",
+    "@typescript-eslint/parser": "^5.51.0",
+    "@vitest/coverage-c8": "^0.28.4",
+    "cross-env": "^7.0.3",
+    "eslint": "^8.34.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-unicorn": "^45.0.2",
+    "np": "^7.6.3",
+    "prettier": "^2.8.4",
+    "shx": "^0.3.4",
+    "typescript": "^4.9.5",
+    "unbuild": "^1.1.1",
+    "vite": "^4.1.1",
+    "vitest": "^0.28.4"
+  }
+}
