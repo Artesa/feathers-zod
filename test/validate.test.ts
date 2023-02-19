@@ -1,5 +1,5 @@
 import { expect } from "vitest";
-import { getQuerySchema, validateQuery, validateData } from "../src";
+import { querySyntax, validateQuery, validateData } from "../src";
 import { z } from "zod";
 
 describe("index.test.ts", function () {
@@ -8,7 +8,7 @@ describe("index.test.ts", function () {
     age: z.number()
   });
 
-  const querySchema = getQuerySchema(schema);
+  const querySchema = querySyntax(schema);
 
   it("get started", async () => {
     const context = { params: { query: { name: "John" } } };
